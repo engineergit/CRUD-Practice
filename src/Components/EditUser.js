@@ -9,7 +9,7 @@ export const EditUser = () => {
   const navigate = useNavigate();
 
     useEffect(() => {
-        let searchUser = users.find((user)=> user.id === id);
+        let searchUser = users.find((user)=> user.id ===  id);
         let userName = searchUser.name;
         setName(userName)
     },[users,id])
